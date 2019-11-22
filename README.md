@@ -4,19 +4,11 @@ CSE3080 DS Assignments Spring Semester
 HW1.
 
 #1 
-
 숫자들로 이루어진 string이 주어졌을 때, 숫자들의 순서를 바꾸지 않고 가능한 모든 partition을 출력하는 C 프로그램을 recursion을 이용하여 작성하시오.
-
-
   ex. 1234 -> 1/2/3/4, 1/2/34, 1/23/4, 1/234, 12/3/4, ...
   
-  
- 
 #2 
-
 0-9까지의 숫자를 포함하는 string과 target이 주어졌을 때, 주어진 string과 binary operator +, -, *만을 사용하여 계산 결과가 target인 수식을 만드는 놀이를 하려 한다. 예를 들어, string 123과 target 6이 주어졌을 때 만들 수 있는 수식은 1+2+3, 1*2*3의 두 가지가 된다. target을 만드는 가능한 모든 수식을 출력하는 C 프로그램을 recursion을 이용하여 작성하시오. 이 때, 주어진 string의 순서는 바꾸지 않는다.
-
-
   ex. 123 6 -> 1+2+3 = 6, 1*2*3 = 6
   ex. 123 7 -> 1*2+5, 12-5
   ex. 1 1 -> 1
@@ -34,7 +26,8 @@ HW2.
 만약 string에서 pattern이 발견되면, pmatch()는 가장 처음 pattern과 string이 matching되는 부분의 starting index를 return한다.
 pmatch()를 수정하여, string과 pattern이 matching되는 모든 부분의 starting indices를 출력하는 함수 pmatch_all()을 작성하라
 
- #2 Array을 parameter로 받은 후, 연속된 숫자만이 저장되어 있는지 확인하는 함수 check_array()를 만들고자 한다. 예를 들어, {4, 1, 5, 2, 3}와 같은 array의 경우에는 1부터 5까지의 연속적인 숫자들이 저장되어 있으므로, check_array()가 1을 return하도록 한다. 그러나 {10, 14, 12, 15, 11, 9}와 같은 array의 경우에는 중간에 13이 빠져 있으므로 check_array()가 0을 return하도록 한다.
+ #2
+ Array을 parameter로 받은 후, 연속된 숫자만이 저장되어 있는지 확인하는 함수 check_array()를 만들고자 한다. 예를 들어, {4, 1, 5, 2, 3}와 같은 array의 경우에는 1부터 5까지의 연속적인 숫자들이 저장되어 있으므로, check_array()가 1을 return하도록 한다. 그러나 {10, 14, 12, 15, 11, 9}와 같은 array의 경우에는 중간에 13이 빠져 있으므로 check_array()가 0을 return하도록 한다.
 check_array()를 구현하는 데에는 여러 가지가 있지만, 가장 쉬운 방법은 배열을 먼저 sorting한 후 중간에 빠진 숫자가 있는지 찾는 것이다. 이 경우, array의 크기를 n이라 할 때, 함수의 시간 복잡도는 𝑂(𝑛𝑙𝑜𝑔𝑛)이 된다. 물론 이보다 더 나은 방법도 존재한다. 𝑂(𝑛)의 시간 복잡도를 가지도록 check_array()를 작성해보자.
 
 HW3.
